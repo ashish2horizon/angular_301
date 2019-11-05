@@ -1,0 +1,14 @@
+<div *ngFor="let movie of movies">
+  <mat-card class="example-card">
+        <img mat-card-image src={{movie.poster}} alt="Photo of a Shiba Inu">
+        <h6 id="data" class="text-center">{{movie.title}}</h6>
+        <mat-card-subtitle>Location : {{movie.location}}</mat-card-subtitle>
+        <mat-card-subtitle>Timings : {{movie.location}}</mat-card-subtitle>      
+        <span mat-icon-button  color="accent">
+        <mat-icon color="accent" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+        </span><sup><b style="margin-right:4px">{{movie.rating}}</b>
+              </sup>
+        <mat-icon color="black" style="margin-left:120px" aria-label="Example icon-button with a heart icon">delete</mat-icon>
+       
+  </mat-card>
+</div>
